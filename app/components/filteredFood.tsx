@@ -38,7 +38,6 @@ export default function FilteredFood({ category }: { category: string }) {
         // getAllFood now returns [] (never throws) for categories the
         // external API doesn't support, e.g. "Rice", "Chicken Stew"
         const apiData: Food[] = await getAllFood(category)
-        const data = apiData.slice(0, 6)
 
         // staticMenuItems is shaped like MenuItem (image, description),
         // not Food (img, dsc, rate, country) — reshape before combining
@@ -57,7 +56,7 @@ export default function FilteredFood({ category }: { category: string }) {
         console.log("Filtered static items:", filtered)
 
         // static items shown first, then whatever the API returns
-        const combined: Food[] = [...filtered, ...data]
+        const combined: Food[] = [...filtered]
 
         console.log("combined food data", combined)
         setFood(combined)

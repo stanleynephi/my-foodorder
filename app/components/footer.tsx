@@ -55,7 +55,13 @@ function LogoBadge() {
 
 function PinIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-0.5 shrink-0">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      className="mt-0.5 shrink-0"
+    >
       <path
         d="M8 1.5c-2.5 0-4.5 2-4.5 4.5 0 3.4 4.5 8.5 4.5 8.5s4.5-5.1 4.5-8.5c0-2.5-2-4.5-4.5-4.5Z"
         stroke="#C9A227"
@@ -68,7 +74,13 @@ function PinIcon() {
 
 function WhatsAppIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="mt-0.5 shrink-0">
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      className="mt-0.5 shrink-0"
+    >
       <path
         d="M8 1.5a6.5 6.5 0 0 0-5.6 9.8L1.5 14.5l3.3-.9A6.5 6.5 0 1 0 8 1.5Z"
         stroke="#C9A227"
@@ -84,7 +96,11 @@ function WhatsAppIcon() {
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#0F0D0B" }} className="border-t" data-border="#3a3327">
+    <footer
+      style={{ backgroundColor: "#0F0D0B" }}
+      className="border-t"
+      data-border="#3a3327"
+    >
       <div
         className="mx-auto grid max-w-6xl gap-10 border-t px-4 py-12 sm:px-6 md:grid-cols-4"
         style={{ borderColor: "#3a3327" }}
@@ -108,8 +124,11 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="mt-4 font-body text-sm leading-relaxed" style={{ color: "#8a8378" }}>
-            Meals can be customized. Made fresh, served with care.
+          <p
+            className="mt-4 font-body text-sm leading-relaxed"
+            style={{ color: "#8a8378" }}
+          >
+            Where taste meets perfection to create nutritious meals.
           </p>
         </div>
 
@@ -174,7 +193,10 @@ export default function Footer() {
           </h3>
           <dl className="mt-4 flex flex-col gap-2">
             {HOURS_TABLE.map((row) => (
-              <div key={row.day} className="flex justify-between gap-4 font-body text-sm">
+              <div
+                key={row.day}
+                className="flex justify-between gap-4 font-body text-sm"
+              >
                 <dt style={{ color: "#8a8378" }}>{row.day}</dt>
                 <dd style={{ color: "#F3ECDD" }}>{row.time}</dd>
               </div>
@@ -187,7 +209,8 @@ export default function Footer() {
       <div className="border-t" style={{ borderColor: "#3a3327" }}>
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 text-center sm:flex-row sm:px-6 sm:text-left">
           <p className="font-body text-xs" style={{ color: "#6b655a" }}>
-            © {new Date().getFullYear()} Jegisa&apos;s Cuisine. All rights reserved.
+            © {new Date().getFullYear()} Jegisa&apos;s Cuisine. All rights
+            reserved.
           </p>
           <p className="font-body text-xs" style={{ color: "#6b655a" }}>
             Cape Coast, Ghana
