@@ -76,34 +76,34 @@ export const staticMenuItems: MenuItem[] = [
 
   // 3. Sausage Stew
   {
-    id: "static-sausage-stew-small",
-    name: "Sausage Stew - Small",
+    id: "static-okro-stew-small",
+    name: "Okro Stew - Small",
     price: 50,
     category: "stew",
     dsc: "",
     rate: 0,
     country: "Ghana",
-    img: "/images/stew.jpg",
+    img: "/images/okro.jpg",
   },
   {
-    id: "static-sausage-stew-medium",
-    name: "Sausage Stew - Medium",
+    id: "static-okro-stew-medium",
+    name: "Okro Stew - Medium",
     price: 70,
     category: "stew",
     dsc: "",
     rate: 0,
     country: "Ghana",
-    img: "/images/stew.jpg",
+    img: "/images/okro.jpg",
   },
   {
-    id: "static-sausage-stew-large",
-    name: "Sausage Stew - Large",
+    id: "static-okro-stew-large",
+    name: "Okro Stew - Large",
     price: 90,
     category: "stew",
     dsc: "",
     rate: 0,
     country: "Ghana",
-    img: "/images/stew.jpg",
+    img: "/images/okro.jpg",
   },
 
   // 4. Soup
