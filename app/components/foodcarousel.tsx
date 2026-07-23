@@ -7,9 +7,21 @@ import AutoScroll from "embla-carousel-auto-scroll"
 import { getAllFood } from "../api/foodmenu/routes"
 import FoodCard from "./ui/foodcard"
 
+import { staticMenuItems } from "../lib/staticMenuItems"
+
+type Food = {
+  id: number | string
+  img: string
+  dsc: string
+  name: string
+  price: number
+  rate: number
+  country: string
+}
+
 /** make an api call and then pass the data into a card */
 export default function FoodCarousel() {
-  const [foods, setfood] = useState<[]>([])
+  const [foods, setfood] = useState<Food[]>([])
 
   //set up the embla carousel
   const [emblaRef] = useEmblaCarousel(
@@ -29,7 +41,7 @@ export default function FoodCarousel() {
   //set up useEffect to call the api and then pass the data to the food state
   useEffect(() => {
     async function loadFood() {
-      const foodData = await getAllFood("burgers")
+      const foodData = staticMenuItems
 
       //get the data and then slice up to index 10
       setfood(foodData.slice(0, 6))
