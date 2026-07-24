@@ -19,6 +19,16 @@ type Food = {
   country: string
 }
 
+// Fisher-Yates shuffle — returns a new shuffled array, doesn't mutate the original
+function shuffle<T>(array: T[]): T[] {
+  const result = [...array]
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
+  }
+  return result
+}
+
 /** make an api call and then pass the data into a card */
 export default function FoodCarousel() {
   const [foods, setfood] = useState<Food[]>([])
@@ -41,7 +51,7 @@ export default function FoodCarousel() {
   //set up useEffect to call the api and then pass the data to the food state
   useEffect(() => {
     async function loadFood() {
-      const foodData = staticMenuItems
+      const foodData = shuffle(staticMenuItems)
 
       //get the data and then slice up to index 10
       setfood(foodData.slice(0, 6))
