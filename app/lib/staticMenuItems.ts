@@ -127,7 +127,7 @@ export const staticMenuItems: MenuItem[] = [
     dsc: "",
     rate: 0,
     country: "Ghana",
-    img: "/images/noodles.jpg",
+    img: "/images/noodles_ind.jpg",
   },
   {
     id: "static-noodles-2",
@@ -141,7 +141,7 @@ export const staticMenuItems: MenuItem[] = [
   },
   {
     id: "static-noodles-3",
-    name: "5 Balls of Banku",
+    name: "Banku",
     price: 20,
     category: "others",
     dsc: "",
